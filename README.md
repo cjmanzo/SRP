@@ -1,5 +1,5 @@
-## The Liskov Substitution Principle (LSP)
+## The Single Responsibility Principle(SRP)
 
-### The LSP guide was introduced in 1987 by a computer scientist called Barbara Liskov during her conference on "Data abstraction". This principle is widely used in OOP related programming. The principle directs that an application should continue running without any bugs when a subclass inherits from a superclass. in simpler terms, when inheriting from the parent class, the parent class objects should behave the same way as the objects of a child-class.
+### The SRP states that "a class, function or a module should have one and only one reason to change." This means a class should only have a single job that defines it. For example, a class is responsible in retrieving users from the database, it should only retrieve the users and should not care about formatting the data or displaying it to the users. This should be handled by another class/module. the SRP design principle can be compared to the concept of a clean, well organized room. Having utensil/clothes all over the room is messy, and this is a representation of spaghetti code. Everything should be put where it belongs and easier to find whenever any new person steps into the room.
 
-### Take an example of a Rectangle class. A rectangle has 4 sides where 2 sides are equal. The area will be the product of the length and width. The same is true for a square since it too has 4 sides all equal. Methods from the Rectangle class can be used by the Square class application and still work without errors
+### The program below defines a simple Animal class with its properties.
